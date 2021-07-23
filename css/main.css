@@ -28,6 +28,13 @@
 .pitsa__wrap {
 margin-bottom: 32px;
 }
+.pitsa__wrap-extra{
+    display: flex;
+    align-items: center;
+}
+.pitsa__wrap-extra h2{
+    margin-right: 16px;
+}
 .pitsa__wrap-title {
     font-weight: bold;
     font-size: 24px;
@@ -44,8 +51,8 @@ select{
     align-items: center;
     justify-content: flex-start;
 }
-input[type='radio']{
-    display: none;
+.pitsa__size{
+    display:none ;
 }
 .pitsa__label-radio{
     display: inline-block;
@@ -86,6 +93,14 @@ input[type='checkbox']{
 }
 .pitsa__right {
     width: 30%;
+}
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+ul li{
+    margin-bottom: 8px;
 }
 .pitsa__ustida {
 }
