@@ -12,6 +12,7 @@
     padding: 24px;
 }
 .pitsa__title {
+    margin: 0;
     text-align: center;
     margin-bottom: 32px;
     font-weight: bolder;
@@ -33,9 +34,15 @@ margin-bottom: 32px;
     align-items: center;
 }
 .pitsa__wrap-extra h2{
+    margin: 0;
     margin-right: 16px;
 }
+.pitsa__wrap-extra span{
+    display: block;
+}
 .pitsa__wrap-title {
+    margin: 0;
+    margin-bottom: 16px;
     font-weight: bold;
     font-size: 24px;
     line-height: 16px;
@@ -102,10 +109,6 @@ ul{
 ul li{
     margin-bottom: 8px;
 }
-.pitsa__ustida {
-}
-.pitsa__qoshimcha {
-}
 input[type='submit']{
     padding: 16px 24px;
     background-color: rgb(230, 69, 144);
@@ -116,4 +119,16 @@ input[type='submit']{
 input[type='submit']:hover{
     background-color: white;
     color: rgb(230, 69, 144);
+}
+@media screen and (max-width:750px) {
+    .pitsa__form{
+        flex-direction: column;
+    }
+    .pitsa__left{
+        width: 100%;
+    }
+    .pitsa__right{
+        width: 100%;
+    }
+    
 }
