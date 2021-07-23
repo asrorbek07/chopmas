@@ -1,26 +1,104 @@
 .pitsa {
-    
+    background-color: rgb(187, 224, 212);
+    font-family: "Arial", sans-serif;
 }
 .container {
-    max-width: 700px;
+    margin-top: 10px;
+    max-width: 800px;
     margin-left: auto;
     margin-right: auto;
     padding-left: 25px;
     padding-right: 25px;
+    padding: 24px;
 }
 .pitsa__title {
+    text-align: center;
+    margin-bottom: 32px;
+    font-weight: bolder;
+    font-size: 32px;
+    line-height: 24px;
 }
 .pitsa__form {
+    display: flex;
 }
 .pitsa__left {
+    width: 60%;
+    margin-right: auto;
 }
 .pitsa__wrap {
+margin-bottom: 32px;
 }
 .pitsa__wrap-title {
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 16px;
+}
+select{
+    padding: 8px 16px;
+    border: 1px solid black;
+    font-weight: bold;
+}
+.pitsa__radio-wrap{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-start;
+}
+input[type='radio']{
+    display: none;
+}
+.pitsa__label-radio{
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+    background-color: white;
+    border-radius: 50%;
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.pitsa__label-radio:not(:last-of-type){
+    margin-right: 20px;
+}
+.pitsa__check__wrap{
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+}
+.pitsa__label-check{
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+}
+.pitsa__label-check:not(:last-of-type){
+    margin-bottom: 8px;
+}
+input[type='checkbox']{
+    width: 30px;
+    height: 30px;
+    margin-right: 20px;
+}
+.pitsa__label-check span{
+    font-size: 20px;
+    line-height: 20px;
+    font-weight: 600px;
 }
 .pitsa__right {
+    width: 30%;
 }
 .pitsa__ustida {
 }
 .pitsa__qoshimcha {
+}
+input[type='submit']{
+    padding: 16px 24px;
+    background-color: rgb(230, 69, 144);
+    color: white;
+    font-size: 24px;
+    line-height: 16px;
+}
+input[type='submit']:hover{
+    background-color: white;
+    color: rgb(230, 69, 144);
 }
