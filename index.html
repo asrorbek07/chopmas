@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chopmas</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <section class="pitsa container">
+        <h1 class="pitsa__title">
+        Pitsa buyurtma qilish
+        </h1>
+        <form action="#" class="pitsa__form" method="POST">
+            <div class="pitsa__left">
+                <div class="pitsa__wrap">
+                    <h2 class="pitsa__wrap-title">
+                        Non qanday bo'lsin?
+                    </h2>
+                    <select name="select" id="select">
+                        <option value="yupqa">Yupqa</option>
+                        <option value="o'rtacha">O'rtacha</option>
+                        <option value="qalin">Qalin</option>
+                    </select>
+                </div>
+                <div class="pitsa__wrap">
+                    <h2 class="pitsa__wrap-title">
+                        Kattaligi
+                    </h2>
+                    <label for="radio1"><input type="radio" name="radio" id="radio1" value="25 sm"></label>
+                    <label for="radio2"><input type="radio" name="radio" id="radio2" value="30 sm"></label>
+                    <label for="radio3"><input type="radio" name="radio" id="radio3" value="35 sm"></label>
+                    <label for="radio3"><input type="radio" name="radio" id="radio3" value="40 sm"></label>
+                </div>
+                <div class="pitsa__wrap">
+                    <h2 class="pitsa__wrap-title">Ustiga nima solaylik?</h2>
+                    <label for="check1"><input type="checkbox" name="check" id="check1" value="- pomidor"> <span>Pomidor</span></label>
+                    <label for="check2"><input type="checkbox" name="check" id="check2" value="- tuzlangan bodring"> <span>Tuzlangan bodring</span></label>
+                    <label for="check3"><input type="checkbox" name="check" id="check3" value="- kurka go'shti"> <span>Kurka go'shti</span></label>
+                    <label for="check4"><input type="checkbox" name="check" id="check4" value="- qo'ziqorin"> <span>Qo'ziqorin</span></label>
+                    <label for="check5"><input type="checkbox" name="check" id="check5" value="- zaytun"> <span>Zaytun</span></label>
+                    <label for="check6"><input type="checkbox" name="check" id="check6" value="- qazi"> <span>Qazi</span></label>
+
+                </div>
+                <div class="pitsa__wrap">
+                    <h2 class="pitsa__wrap-title">Qo'shimchalar</h2>
+                    <label for="check7"><input type="checkbox" name="check1" id="check7" value="- achchiq"><span>Achchiq</span></label>
+                    <label for="check8"><input type="checkbox" name="check1" id="check8" value="- sosiskali"><span>Sosiskali</span></label>
+                </div>
+                
+            </div>
+            <div class="pitsa__right">
+                <div class="pitsa__wrap">
+                    <h2 class="pitsa__wrap-title">Non:</h2>
+                    <span></span>
+                </div>
+                <div class="pitsa__wrap">
+                    <h2 class="pitsa__wrap-title">kattaligi:</h2>
+                    <span></span>
+                </div>
+                <div class="pitsa__wrap">
+                    <h2 class="pitsa__wrap-title">Ustida:</h2>
+                    <ul class="pitsa__ustida"></ul>
+                </div>
+                <div class="pitsa__wrap">
+                    <h2 class="pitsa__wrap-title">Qo'shimcha:</h2>
+                    <ul class="pitsa__qoshimcha"></ul>
+                </div>
+            </div>
+            <div class="pitsa__wrap">
+                <h2 class="pitsa__wrap-title">Jami summa</h2>
+                <span>0</span>
+            </div>
+            
+            <input type="submit" value="Buyurtma berish">
+        </form>
+    </section>
+    
+
+
+
+    <script src="main.js"></script>
+</body>
+</html>
