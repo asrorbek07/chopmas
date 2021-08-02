@@ -11,6 +11,16 @@
     padding-right: 25px;
     padding: 24px;
 }
+.visually-hidden{
+    position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
 .pitsa__title {
     margin: 0;
     text-align: center;
@@ -47,59 +57,78 @@ margin-bottom: 32px;
     font-size: 24px;
     line-height: 16px;
 }
-select{
+.pitsa__select{
     padding: 8px 16px;
     border: 1px solid black;
     font-weight: bold;
 }
-.pitsa__radio-wrap{
+.pitsa__size-wrap{
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: flex-start;
 }
-.pitsa__size{
-    display:none ;
+.pitsa__label-radio:not(:last-of-type){
+    margin-right: 20px;
 }
 .pitsa__label-radio{
-    display: inline-block;
-    width: 80px;
-    height: 80px;
-    background-color: white;
-    border-radius: 50%;
+    margin-bottom: 20px;
+}
+.pitsa__size-control{
+    width: 100px;
+    height: 100px;
     border: 1px solid black;
     display: flex;
     align-items: center;
     justify-content: center;
+    background-color: white;
+    border-radius: 50%;
+    text-align: center;
 }
-.pitsa__label-radio:not(:last-of-type){
-    margin-right: 20px;
-}
-.pitsa__check__wrap{
-    width: 300px;
+.pitsa__product__wrap{
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
+}
+.pitsa__asortiment__wrap{
+    display: flex;
+    flex-wrap: wrap;
 }
 .pitsa__label-check{
-    display: flex;
-    align-items: center;
+    width: 220px;
+    display: block;
     margin-right: 20px;
 }
 .pitsa__label-check:not(:last-of-type){
     margin-bottom: 8px;
 }
-input[type='checkbox']{
-    width: 30px;
-    height: 30px;
-    margin-right: 20px;
-}
-.pitsa__label-check span{
+.pitsa__size-control,
+.pitsa__product-control,
+.pitsa__asortiment-control{
     font-size: 20px;
     line-height: 20px;
     font-weight: 600px;
 }
+.pitsa__product-control,
+.pitsa__asortiment-control{
+    display: inline-flex;
+    align-items: center;
+}
+.pitsa__product-control::before,
+ .pitsa__asortiment-control::before{
+    display: block;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #000;
+    margin-right: 10px;
+    content: "";
+}
+.pitsa__product:checked ~.pitsa__product-control::before,
+.pitsa__asortiment:checked ~.pitsa__asortiment-control::before,
+.pitsa__size:checked~.pitsa__size-control{
+    background-color:tomato;
+}
 .pitsa__right {
-    width: 30%;
+    width: 35%;
 }
 ul{
     list-style-type: none;
@@ -111,14 +140,14 @@ ul li{
 }
 input[type='submit']{
     padding: 16px 24px;
-    background-color: rgb(230, 69, 144);
+    background-color: tomato;
     color: white;
     font-size: 24px;
     line-height: 16px;
 }
 input[type='submit']:hover{
     background-color: white;
-    color: rgb(230, 69, 144);
+    color: tomato
 }
 @media screen and (max-width:750px) {
     .pitsa__form{

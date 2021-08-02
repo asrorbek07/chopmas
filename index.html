@@ -19,75 +19,79 @@
                     <h2 class="pitsa__wrap-title">
                         Non qanday bo'lsin?
                     </h2>
-                    <select name="select" id="select">
-                        <option value="yupqa">Yupqa</option>
-                        <option value="o'rtacha">O'rtacha</option>
-                        <option value="qalin">Qalin</option>
+                    <select class="pitsa__select" name="select" id="select">
+                    
                     </select>
                 </div>
                 <div class="pitsa__wrap">
                     <h2 class="pitsa__wrap-title">
                         Kattaligi
                     </h2>
-                    <div class="pitsa__radio-wrap">
-                        <label class="pitsa__label-radio"><input type="radio" name="pitsa-size" value="25" class="pitsa__size"><span>25 sm</span></label>
-                        <label class="pitsa__label-radio"><input type="radio" name="pitsa-size" value="30" class="pitsa__size"><span>30 sm</span></label>
-                        <label class="pitsa__label-radio"><input type="radio" name="pitsa-size" value="35" class="pitsa__size"><span>35 sm</span></label>
-                        <label class="pitsa__label-radio"><input type="radio" name="pitsa-size" value="40" class="pitsa__size"><span>40 sm</span></label>
+                    <div class="pitsa__size-wrap">
+                        
                     </div>
                     
                 </div>
                 <div class="pitsa__wrap">
                     <h2 class="pitsa__wrap-title">Ustiga nima solaylik?</h2>
-                    <div class="pitsa__check__wrap">
-                        <label for="check1" class="pitsa__label-check"><input class="pitsa__product" type="checkbox" name="check" id="check1" value="- pomidor" > <span>Pomidor</span></label>
-                        <label for="check2" class="pitsa__label-check"><input class="pitsa__product" type="checkbox" name="check" id="check2" value="- tuzlangan bodring" > <span>Tuzlangan bodring</span></label>
-                        <label for="check3" class="pitsa__label-check"><input class="pitsa__product" type="checkbox" name="check" id="check3" value="- kurka go'shti" > <span>Kurka go'shti</span></label>
-                        <label for="check4" class="pitsa__label-check"><input class="pitsa__product" type="checkbox" name="check" id="check4" value="- qo'ziqorin" > <span>Qo'ziqorin</span></label>
-                        <label for="check5" class="pitsa__label-check"><input class="pitsa__product" type="checkbox" name="check" id="check5" value="- zaytun" > <span>Zaytun</span></label>
-                        <label for="check6" class="pitsa__label-check"><input class="pitsa__product" type="checkbox" name="check" id="check6" value="- qazi" > <span>Qazi</span></label>
+                    <div class="pitsa__product__wrap">
+                        
                     </div>
-                    
-
                 </div>
                 <div class="pitsa__wrap">
                     <h2 class="pitsa__wrap-title">Qo'shimchalar</h2>
-                    <div class="pitsa__check__wrap">
-                        <label for="check7" class="pitsa__label-check"><input class="pitsa__asortiment" type="checkbox" name="check1" id="check7" value="- achchiq"><span>Achchiq</span></label>
-                        <label for="check8" class="pitsa__label-check"><input class="pitsa__asortiment" type="checkbox" name="check1" id="check8" value="- sosiskali"><span>Sosiskali</span></label>
-                    </div>
-                    
-                </div>
-                
+                    <div class="pitsa__asortiment__wrap">
+                        
+                    </div>      
+                </div>  
             </div>
             <div class="pitsa__right">
                 <div class="pitsa__wrap pitsa__wrap-extra">
                     <h2 class="pitsa__wrap-title">Non:</h2>
-                    <span class="select"></span>
+                    <span class="pitsa__select-output"></span>
                 </div>
                 <div class="pitsa__wrap pitsa__wrap-extra">
                     <h2 class="pitsa__wrap-title">kattaligi:</h2>
-                    <span class="radio"></span>
+                    <span class="pitsa__size-output"></span>
                 </div>
                 <div class="pitsa__wrap">
                     <h2 class="pitsa__wrap-title">Ustida:</h2>
-                    <ul class="pitsa__ustida"></ul>
+                    <ul class="pitsa__product-output-list"></ul>
                 </div>
                 <div class="pitsa__wrap">
                     <h2 class="pitsa__wrap-title">Qo'shimcha:</h2>
-                    <ul class="pitsa__qoshimcha"></ul>
+                    <ul class="pitsa__asortiment-output-list"></ul>
                 </div>
                 <div class="pitsa__wrap">
                     <h2 class="pitsa__wrap-title">Jami summa</h2>
-                    <span>0</span>
-                </div>
-                
+                    <span class="pitsa__sum-output"></span>
+                </div>          
                 <input type="submit" value="Buyurtma berish">
             </div>
             
         </form>
     </section>
-    
+    <template class="pitsa__select-template">
+        <option class="pitsa__select-option" value=""></option>
+    </template>
+    <template class="pitsa__size-template">
+        <label class="pitsa__label-radio">
+            <input type="radio" name="pitsa-size" class="pitsa__size visually-hidden">
+            <span class="pitsa__size-control"></span>
+        </label>
+    </template>
+    <template class="pitsa_product-template">
+        <label  class="pitsa__label-check">
+            <input class="pitsa__product visually-hidden" type="checkbox">
+            <span class="pitsa__product-control"></span>
+        </label>
+    </template>
+    <template class="pitsa__asortiment-template">
+        <label class="pitsa__label-check">
+            <input class="pitsa__asortiment visually-hidden" type="checkbox">
+            <span class="pitsa__asortiment-control"></span>
+        </label>
+    </template>
 
 
 
